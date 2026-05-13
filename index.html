@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝗞𝗔𝗪𝗔𝗞𝗜-227 𝗕𝗔𝗡 𝗥𝗘𝗣𝗢𝗥𝗧</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: radial-gradient(circle at 30% 10%, #0a0f1e, #010101);
+            font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+        .ban-container {
+            background: rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(16px);
+            border-radius: 3rem;
+            border: 1px solid rgba(0, 255, 255, 0.4);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 25px rgba(0,255,255,0.3);
+            width: 100%;
+            max-width: 550px;
+            padding: 2rem;
+            transition: 0.2s;
+        }
+
+        .premium-logo {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(145deg, #111c26, #07121c);
+            padding: 0.5rem 2rem;
+            border-radius: 60px;
+            border: 1px solid cyan;
+            box-shadow: 0 0 10px cyan;
+        }
+
+        .badge span {
+            font-size: 1.2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff, cyan);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            text-align: center;
+            background: linear-gradient(135deg, #fff, #0fffc0);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin: 1rem 0 0.2rem;
+        }
+
+        .sub {
+            text-align: center;
+            color: #7f9fcf;
+            font-size: 0.8rem;
+            margin-bottom: 1.8rem;
+            border-bottom: 1px dashed #2c4055;
+            display: inline-block;
+            width: auto;
+            padding-bottom: 6px;
+        }
+
+        .input-field {
+            margin-bottom: 1.3rem;
+        }
+
+        .input-field label {
+            display: block;
+            color: #bbf0ff;
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 0.85rem;
+        }
+
+        .input-field input,
+        .input-field textarea {
+            width: 100%;
+            background: #0f1a24;
+            border: 1.5px solid #2a3e55;
+            border-radius: 24px;
+            padding: 12px 18px;
+            color: white;
+            font-size: 1rem;
+            font-family: monospace;
+            transition: 0.2s;
+        }
+
+        .input-field input:focus,
+        .input-field textarea:focus {
+            outline: none;
+            border-color: cyan;
+            box-shadow: 0 0 12px cyan;
+            background: #08131c;
+        }
+
+        button {
+            background: linear-gradient(95deg, #00a6c4, #0055aa);
+            width: 100%;
+            border: none;
+            padding: 14px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            border-radius: 40px;
+            margin-top: 1rem;
+            cursor: pointer;
+            transition: 0.1s linear;
+            box-shadow: 0 5px 0 #002244;
+            font-family: inherit;
+        }
+
+        button:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 #002244;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.65rem;
+            color: #2e5270;
+            margin-top: 2rem;
+            border-top: 1px solid #1f3348;
+            padding-top: 1rem;
+        }
+
+        .warning {
+            background: #0f212e;
+            border-left: 5px solid cyan;
+            padding: 10px;
+            border-radius: 16px;
+            font-size: 0.75rem;
+            color: #b5e4ff;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="ban-container">
+    <div class="premium-logo">
+        <div class="badge">
+            <span>⚡POWER BY KAWAKI-227⚡</span>
+        </div>
+    </div>
+    <h1>WHATSAPP BAN SYSTEM</h1>
+    <div style="text-align: center;">
+        <div class="sub">OFFICIAL REPORT TO SUPPORT</div>
+    </div>
+
+    <div class="warning">
+        ⚠️ This tool sends an instant report to WhatsApp Support via email. 
+        Fill the form below and click START.
+    </div>
+
+    <form id="banForm">
+        <div class="input-field">
+            <label>📱 TARGET WHATSAPP NUMBER (international)</label>
+            <input type="tel" id="phone" placeholder="example: 227xxxx" required>
+        </div>
+
+        <div class="input-field">
+            <label>📝 REPORT TEXT / REASON (proof, description)</label>
+            <textarea rows="4" id="messageText" placeholder="WRITE THE ORIGINAL TEXT HERE TO BAN YOUR VICTIMS..."></textarea>
+        </div>
+
+        <button type="button" id="startBan">🩸 SEND TO SUPPORT 🚀</button>
+    </form>
+
+    <div class="footer">
+        🔥 KAWAKI Tech Premium • Auto Email to WhatsApp Support 🔥
+    </div>
+</div>
+
+<script>
+    document.getElementById('startBan').addEventListener('click', function() {
+        let phone = document.getElementById('phone').value.trim();
+        let customMessage = document.getElementById('messageText').value.trim();
+
+        if (!phone) {
+            alert("ERROR: Fill the WhatsApp number first, idiot.");
+            return;
+        }
+        if (!phone.match(/^[0-9]{8,15}$/)) {
+            alert("Invalid number! Use only digits (8-15). Example: 628123456789");
+            return;
+        }
+
+        if (customMessage === "") {
+            customMessage = "No description provided by user.";
+        }
+
+        // Hidden email target (WhatsApp Support)
+        const targetEmail = "support@whatsapp.com";
+        
+        let subject = `[BAN REQUEST] WhatsApp number: ${phone}`;
+        let body = `--- KAWAKI TECH BAN REPORT ---\n\nTarget number: ${phone}\n\nViolation details:\n${customMessage}\n\n---\nSent automatically via KAWAKI Ban Tool.`;
+
+        let mailtoLink = `mailto:${targetEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+        let confirmSend = confirm(`⚠️ KAWAKI TECH ALERT ⚠️\n\nNumber ${phone} will be reported to WhatsApp Support.\nClick OK to continue.`);
+
+        if (confirmSend) {
+            window.location.href = mailtoLink;
+            alert("✅ Report sent! Your email client will open. Just press send.");
+        } else {
+            alert("Cancelled. Coward.");
+        }
+    });
+</script>
+
+</body>
+</html>
